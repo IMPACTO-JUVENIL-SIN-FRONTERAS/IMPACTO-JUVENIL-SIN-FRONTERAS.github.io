@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'fuente fiesta';
+    src: url('agency-fb-bold_[allfont.net].ttf') format('truetype');
+}
+
+ul{
+    list-style: none;
+}
+
+body a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* navigation */
+.nav-main {
+    font-family: fuente fiesta;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+height: 80px;
+padding: 5px 0;
+
+}
+
+.nav-brand {
+    width: 49px;
+}
+ 
+/* NAV LEFT */ 
+.nav-main ul {
+    display: flex;
+
+}
+
+.nav-main ul li {
+    padding: 15px;
+
+}
+.nav-main ul li a:hover{
+    border-bottom:2px solid #ffffff;
+
+}
+
+
+
+article {
+	background-color:#ffffff;
+	padding: 10px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px orangered;
+    text-align: center;
+    font-size: 23px;
+
+}
+
+article h4 {
+	color: orangered;
+	font-size: 40px;
+	margin-bottom: 60px;
+    font-family: fuente fiesta;
+
+}
+
+
+article ul {
+	margin-bottom: 20px;
+    
+}
+h5{
+    padding: 35px;
+    font-size: 40px;
+     }
+
+/* Estilos para el encabezado */
+header {
+	background-color: #ffffff;
+	color: orangered;
+	padding: 10px;
+    font-family: fuente fiesta;
+    text-align: center;
+}
+
+header h1 {
+	font-size: 50px;
+	margin: 0;
+}
+
+header time {
+	font-size: 40px;
+	color: #ffffff;
+}
+body h1{
+    font-family: fuente fiesta;
+    color: #000;
+    padding: 3%;
+
+}
+
+.bot-container p:last-child {
+    animation: typing 1s steps(20, end), blink-caret .5s step-end infinite;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    font-size: 20px;
+    margin: 40px 0;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  
+
+  #submit-question {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: fuente fiesta;
+  }
+  
+  #submit-question:hover {
+    background-color: orangered;
+  }
+  body{
+    background-color: darkgrey;
+  }
+  

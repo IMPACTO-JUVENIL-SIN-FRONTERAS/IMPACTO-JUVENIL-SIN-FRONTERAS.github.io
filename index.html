@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>IMPACTO JUVENIL SIN FRONTERAS
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenido</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Estilos para el menú */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      color: #000;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .navbar-brand {
+      font-size: 30px;
+      font-family: fuente fiesta;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+      text-align: center;
+    }
+    .navbar-menu {
+      display: none;
+    }
+    .navbar-toggle {
+      background-color: transparent;
+      border: none;
+      color: #000;
+      font-size: 25px;
+      cursor: pointer;
+    
+    }
+    .navbar-toggle:hover {
+      text-decoration: underline;
+    }
+    .navbar-toggle:focus {
+      outline: none;
+    }
+    .navbar-menu.is-open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      margin-top: 10px;
+      padding: 10px;
+      z-index: 1;
+      font-family: fuente fiesta;
+    }
+    .navbar-menu.is-open a {
+      color: #000;
+      text-decoration: none;
+      margin-bottom: 15px;
+    }
+    
+
+    
+    /* Estilos para dispositivos móviles */
+    @media only screen and (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar-brand {
+        margin-bottom: 10px;
+      }
+      .navbar-menu {
+        display: none;
+      }
+      .navbar-menu.is-open {
+        display: block;
+      }
+      .navbar-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>IMPACTO JUVENIL SIN FRONTERAS</h1>
+    <button class="navbar-toggle" id="navbar-toggle">☰</button>
+    <div class="navbar-menu" id="navbar-menu">
+      <a href="#">Inicio</a>
+      <a href="#">Tienda</a>
+      <a href="#">Contacto</a>
+    </div>
+  </nav>
+  
+  <script>
+    // Script para manejar el botón del menú en dispositivos móviles
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarMenu = document.getElementById('navbar-menu');
+    navbarToggle.addEventListener('click', () => {
+      navbarMenu.classList.toggle('is-open');
+    });
+  </script>
+</body>
+</html>
+
+            
+
+        </title>
+        <link rel="stylesheet" href="styles.css">
+  <title>Carrusel con título</title>
+  <!-- Agregar los enlaces a las bibliotecas -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+  <style>
+    /* Estilos personalizados para el carrusel */
+    .carousel-item {
+      height: 400px;
+    }
+    .carousel-item img {
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Estilos personalizados para el título */
+    .carousel-title {
+      font-size: 45px;
+      font-weight: bold;
+      font-family: fuente fiesta;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      color: orangered;
+       }
+       /* Estilos personalizados para dispositivos móviles */
+    @media only screen and (max-width: 768px) {
+      .carousel-item {
+        height: 150px; /* cambia la altura según tus necesidades */
+      }
+      .carousel-title {
+        font-size: 20px;
+      }
+    }
+    
+    /* Estilos personalizados para pantallas de computadora */
+    @media only screen and (min-width: 769px) {
+      .carousel-item {
+        height: 450px; /* cambia la altura según tus necesidades */
+      }
+      .carousel-title {
+        font-size: 48px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Título del carrusel -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- Indicadores del carrusel -->
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    
+    <!-- Imágenes del carrusel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/impacto1.png" alt="Primera imagen">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/impacto2.png" alt="Segunda imagen">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/impacto3.png" alt="Tercera imagen">
+      </div>
+    </div>
+    
+    <!-- Controles del carrusel -->
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+
+  <head>
+    <title>Registro de asistencia</title>
+               <style>
+               form {
+                   margin: 20px auto;
+                   max-width: 350px;
+                   padding: 10px;
+                   background-color: #fff;
+                   border-bottom: 15px;
+                   font-family: fuente fiesta;
+                   font-size:small;
+                
+               }
+       
+               label {
+                   display: block;
+                   margin-bottom: 5px;
+               }
+       
+               input[type=text], input[type=NombredetuIglecia] {
+                   width: 100%;
+                   padding: 8px 8px;
+                   margin: 8px 0;
+                   box-sizing: border-box;
+                   border: 2px solid orangered;
+                   border-radius: 4px;
+               }
+               input[type=text], input[type=Telefono] {
+
+                border:2px solid orangered;
+                border-radius: 4px;
+                margin: 8px 0;
+            
+               }
+       
+               input[type=submit] {
+                   background-color: #f16321;
+                   color: #ffffff;
+                   padding: 10px 17px;
+                   border: none;
+                   border-radius: 4px;
+                   cursor: pointer;
+                   float: right;
+           
+               }
+       
+               input[type=submit]:hover {
+                   background-color: #f16321;
+               }
+                </style>
+
+
+           </div>
+           </header>
+           <head>
+           <form>
+                                <!--fiesta-->
+                   <section id="notificacion"></section>
+                   <header class="fiesta">
+                 <h2>Registra tu asistencia para</h2>
+                 <h3> FIESTA EN EL DESIERTO</h3>
+               </header>
+               <form action="guardar.php" method="post">
+                   <label for="nombre">Nombre completo:</label>
+                   <input type="text" id="nombre" name="nombre" required><br>
+                   <label for="iglesia">Nombre de Tu Iglesia:</label>
+                   <input type="text" id="iglesia" name="iglesia"><br>
+                   <label for="telefono">Telefono:</label>
+                   <input type="telefono" name="telefono" id="telefono" required><br>
+                   <label for="asistencia">Enviar para confirmar asistencia:</label>
+                   <button type="submit">Enviar</button>
+                   <section id="notificacion"></section>
+               </form>
+               </head>
+
+               <!DOCTYPE html>
+               <html>
+                 <head>
+                   <meta charset="UTF-8">
+                   <title>Bot de Preguntas y Respuestas</title>
+                   <style>
+                     body {
+                       font-family: Arial, sans-serif;
+                       background-color: #f7f7f7;
+                     }
+                     h1 {
+                       text-align: center;
+                       color: #333;
+                     }
+                     .bot-container {
+                       margin: 20px auto;
+                       width: 80%;
+                       max-width: 600px;
+                       background-color: #fff;
+                       padding: 20px;
+                       border-radius: 10px;
+                       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                       position: relative;
+                     }
+                     .typing-indicator {
+                       display: inline-block;
+                       position: absolute;
+                       bottom: 10px;
+                       left: 20px;
+                       width: 10px;
+                       height: 10px;
+                       border-radius: 50%;
+                       background-color: #333;
+                       animation: typing 1s ease-in-out infinite;
+                     }
+                     .typing-indicator:nth-child(2) {
+                       left: 40px;
+                       animation-delay: 0.2s;
+                     }
+                     .typing-indicator:nth-child(3) {
+                       left: 60px;
+                       animation-delay: 0.4s;
+                     }
+                     @keyframes typing {
+                       0% {
+                         opacity: 0;
+                         transform: translate(0, 0);
+                       }
+                       50% {
+                         opacity: 1;
+                         transform: translate(0, 10px);
+                       }
+                       100% {
+                         opacity: 0;
+                         transform: translate(0, 0);
+                       }
+                     }
+                   </style>
+                 </head>
+                 <body>
+                   <h1>Bot de Preguntas y Respuestas</h1>
+                   <div class="bot-container">
+                     <p>Hola, ¿en qué puedo ayudarte?</p>
+                     <div class="typing-indicator"></div>
+                     <div class="typing-indicator"></div>
+                     <div class="typing-indicator"></div>
+                     <div class="question-container" style="display:none">
+                       <p>Hazme una pregunta:Ejemplo ¿como son los jovenes de impacto juvenil? </p>
+                       <input type="text" id="user-question">
+                       <button id="submit-question">Responder</button>
+                     </div>
+                   </div>
+                   <script>
+                    var botContainer = document.querySelector('.bot-container');
+                    var questionContainer = document.querySelector('.question-container');
+                    var userQuestionInput = document.querySelector('#user-question');
+                    var submitQuestionButton = document.querySelector('#submit-question');
+                    var typingIndicators = document.querySelectorAll('.typing-indicator');
+                    
+                    // Mostrar pregunta y esperar a que el usuario escriba una pregunta
+                    setTimeout(function() {
+                      typingIndicators.forEach(function(indicator) {
+                        indicator.style.display = 'none';
+                      });
+                      questionContainer.style.display = 'block';
+                      userQuestionInput.focus();
+                    }, 3000);
+                    
+                    // Responder a la pregunta del usuario
+                    submitQuestionButton.addEventListener('click', function() {
+                      var userQuestion = userQuestionInput.value.trim().toLowerCase();
+                      if (userQuestion === '¿como son los jovenes de impacto juvenil?') {
+                        botContainer.innerHTML += '<p>Son valientes,hambrientos y esforzados.</p>';
+                      } else if (userQuestion === '¿cuando va a ser fiesta en el desierto?') {
+                        botContainer.innerHTML += '<p>Fiesta en el desierto se llavara acabo este 13 de mayo no faltes!!.</p>';
+                      } else if (userQuestion === '¿qué hora es?') {
+                        var date = new Date();
+                        var hours = date.getHours();
+                        var minutes = date.getMinutes();
+                        var ampm = hours >= 12 ? 'PM' : 'AM';
+                        hours = hours % 12;
+                        hours = hours ? hours : 12;
+                        minutes = minutes < 10 ? '0' + minutes : minutes;
+                        botContainer.innerHTML += '<p>La hora actual es ' + hours + ':' + minutes + ' ' + ampm + '.</p>';
+                      } else if (userQuestion === '¿donde sera fiesta en el desierto?') {
+                        botContainer.innerHTML += '<p>fiesta en el desierto sera en lomablanca para una ubicacion mas especifica comunicate con nosotros 656 163 4731.</p>';
+                      } else {
+                        botContainer.innerHTML += '<p>No entendí la pregunta. Por favor, hazme otra pregunta.</p>';
+                      }
+                      userQuestionInput.value = '';
+                      userQuestionInput.focus();
+                    });
+                  </script>
+                  
+
+
+               <!DOCTYPE html>
+               <html lang="es">
+               <head>
+                 <meta charset="UTF-8">
+                 <title>Mi sitio web</title>
+                 <meta name="viewport" content="width=device-width, initial-scale=1">
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                 <style>
+                   /* Estilos para los íconos de redes sociales */
+                   .social-icons {
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                   }
+                   .social-icons li {
+                     margin: 0 10px;
+                     list-style: none;
+                   }
+                   .social-icons a {
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     width: 40px;
+                     height: 40px;
+                     border-radius: 50%;
+                     background-color: #333;
+                     color: #fff;
+                     transition: all 0.2s ease-in-out;
+                   }
+                   .social-icons a:hover {
+                     background-color: #4267B2;
+                   }
+                   .social-icons a i {
+                     font-size: 20px;
+                   }
+                 </style>
+               </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+               <body>
+                 <header>
+                   <nav>
+                     <ul class="social-icons">
+                       <li><a href="https://www.facebook.com/impactojuvenilsinfrontera?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a></li>
+                       <li><a href="https://www.instagram.com/impactojuvenilsf/?igshid=YmMyMTA2M2Y%3D"><i class="fab fa-instagram"></i></a></li>
+                       <li><a href="https://www.tiktok.com/@impactojuvenilsf?_t=8acumOxD4Ra&_r=1"><i class="fab fa-tiktok"></i></a></li>
+                     </ul>
+                   </nav>
+                 </header>
+               </body>
+               </html>
+               
+
+
+
+
+
+
+</body>
+</html>
