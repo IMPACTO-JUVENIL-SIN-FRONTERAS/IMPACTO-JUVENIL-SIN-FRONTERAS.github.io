@@ -147,7 +147,7 @@ body h1{
   .navbar-toggle {
     background-color: transparent;
     border: none;
-    color: #000;
+    color:orangered;
     font-family:fuente fiesta;
     font-size: 25px;
     cursor: pointer;
