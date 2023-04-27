@@ -144,4 +144,11 @@ body h1{
     font-size: 20px;
    text-aling:center;
 }
-  
+  .navbar-toggle {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-family:fuente fiesta;
+    font-size: 25px;
+    cursor: pointer;
+}
